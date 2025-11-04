@@ -12,7 +12,7 @@ class RockPaperScissors:
             return user_choice.lower()
         
         print(f'Invalid choice,you must select from {self.choices}.')
-        return self.get_plrayer_choice()
+        return self.get_player_choice()
 
     def get_computer_choice(self):
         return random.choice(self.choices)
@@ -22,17 +22,17 @@ class RockPaperScissors:
         if user_choice == computer_choice:
             return "It's a Tie!"
         
-        win_combinations = [('rock', 'Scissors'), ('paper', 'rock'), ('Scissors', 'paper')]
+        win_combinations = [('rock', 'scissors'), ('paper', 'rock'), ('scissors', 'paper')]
         for win_comb in win_combinations:
-            if (user_choice == win_comb[0]) & (computer_choice == win_comb[1]):
+            if (user_choice == win_comb[0]) and (computer_choice == win_comb[1]):
                 return "Congregulation! You won!"
             
-            return "Oh no! The computer won!"
+        return "Oh no! The computer won!"
 
     def play(self):
         user_choice = self.get_player_choice()
         computer_choice = self.get_computer_choice()
-        print(f'Copmputer choice: {computer_choice}')
+        print(f'Computer choice: {computer_choice}')
         print(self.decide_winner(user_choice, computer_choice))
 
 
