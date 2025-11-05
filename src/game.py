@@ -5,7 +5,7 @@ Description: Rock Paper Scissors game.
 """
 
 import random
-import typing import List
+from typing import List
 
 class RockPaperScissors:
     """Main class for Rock Paper Scissors game."""
