@@ -1,25 +1,15 @@
-<<<<<<< HEAD
-import random
-
-
-class RockPaperScissors:
-    def __init__(self, name):
-=======
 """
 Author: lhmfzl
 Date Created: 11/05/2025
 Description: Rock Paper Scissors game.
 """
 
-
 import random
 import typing import List
-
 
 class RockPaperScissors:
     """Main class for Rock Paper Scissors game."""
     def __init__(self, name: str):
->>>>>>> 2c36194 (commited)
         self.choices = ['rock', 'paper', 'scissors']
         self.player_name = name
 
@@ -32,15 +22,8 @@ class RockPaperScissors:
         return self.get_player_choice()
 
     def get_computer_choice(self):
-<<<<<<< HEAD
+        """get computer choice randomly from choices: rock, paper, scissors."""
         return random.choice(self.choices)
-
-
-    def decide_winner(self, user_choice, computer_choice):
-=======
-        """get computer choice randomly feom choices: rock, paper, scissors."""
-        return random.choice(self.choices)
-
 
     def decide_winner(self, user_choice: str, computer_choice: str) -> str:
         """Decide the winner of the game based on user and computer choices.
@@ -49,7 +32,7 @@ class RockPaperScissors:
         :param computer_choice: The choice of the computer.
         :return: The result of the game. (who won!)
         """
->>>>>>> 2c36194 (commited)
+
         if user_choice == computer_choice:
             return "It's a Tie!"
         
@@ -61,15 +44,12 @@ class RockPaperScissors:
         return "Oh no! The computer won!"
 
     def play(self):
-<<<<<<< HEAD
-=======
         """Play the game.
         - Get user choice.
         - Get computer choice.
         - Decide the winner.
         - Print the result.
         """
->>>>>>> 2c36194 (commited)
         user_choice = self.get_player_choice()
         computer_choice = self.get_computer_choice()
         print(f'Computer choice: {computer_choice}')
