@@ -1,16 +1,25 @@
+<<<<<<< HEAD
+import random
 
+
+class RockPaperScissors:
+    def __init__(self, name):
+=======
 """
 Author: lhmfzl
 Date Created: 11/05/2025
 Description: Rock Paper Scissors game.
 """
 
+
 import random
 import typing import List
+
 
 class RockPaperScissors:
     """Main class for Rock Paper Scissors game."""
     def __init__(self, name: str):
+>>>>>>> 2c36194 (commited)
         self.choices = ['rock', 'paper', 'scissors']
         self.player_name = name
 
@@ -23,10 +32,12 @@ class RockPaperScissors:
         return self.get_player_choice()
 
     def get_computer_choice(self):
+<<<<<<< HEAD
         return random.choice(self.choices)
 
 
     def decide_winner(self, user_choice, computer_choice):
+=======
         """get computer choice randomly feom choices: rock, paper, scissors."""
         return random.choice(self.choices)
 
